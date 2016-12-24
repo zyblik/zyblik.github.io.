@@ -1,0 +1,11 @@
+/** Created by TTF.in.ua **/
+@font-face {
+    font-family: 'Fatso-Italic';
+    src: url('Fatso-Italic.eot');
+    src: url('Fatso-Italic.eot?#iefix') format('embedded-opentype'),
+         url('Fatso-Italic.woff') format('woff'),
+         url('Fatso-Italic.ttf') format('truetype'),
+         url('Fatso-Italic.svg#Fatso-Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
