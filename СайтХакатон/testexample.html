@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-size: 100%
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+}
+
+html {
+	min-height:100%;
+}
+
+body {
+	color: #606060;
+	text-align: left;
+	font-size: 1em;
+	min-height:100%;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.center-block-main{
+	margin: 0 auto;
+	max-width:990px;
+	overflow: hidden;
+}
+
+.logo {
+	color: #FF3333;
+	float: left;
+	font-family: leop;
+	font-size: 4em;
+	margin-top: 20px;
+}
+
+.logo-add{
+	color:#339933;
+}
+
+.menu-div {
+	float:right;
+}
+
+.menu li {
+	float: left;
+	font-weight: 600;
+	color: #000000;
+}
+
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 50px 35px;
+	display: block;
+	border-bottom: 4px solid #222;
+	border-left: 1px solid #000;
+
+}
+.menu li a.active{
+	color: #58c93a;
+	border-bottom: 4px solid #58c93a;
+}
+.menu li:last-child{
+	border-right: 1px solid #000;
+}
+
+.menu li a:hover:not(.active) {
+	color: #FF9955;
+	border-bottom: 4px solid #FF9955;
+	
+}
+
+#menu-icon {
+	display: none;
+	width: 40px;
+	height: 40px;
+	background: url(../images/hamburger.png) no-repeat center;
+}
+@media screen and (max-width: 1024px) {
+	
+	.logo {
+		float: left;
+		margin-top: 0px;
+	}
+
+	.menu li a {
+		padding:30px 35px;
+	}
+@media screen and (max-width: 790px) {
+
+	#menu-icon {
+		display: inline-block;
+		padding: 20px;
+	}
+
+	.menu {
+		display: none;
+		position: absolute;
+		padding: 10px;
+		background: rgba(1,1,1,0.6);
+		border: 1px solid #fff;
+		right: 20px;
+		top: 30px;
+		width: 50%;
+		border-radius: 2px 0 2px 2px;
+		z-index: 900;
+
+	}
+
+	.menu li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+
+	.menu li a{
+		padding:15px;
+		border:1px solid rgba(1,1,1,0);;
+	}
+
+	nav:hover ul{
+		display: block;
+	}
+}
+</style>
+<body>
+<header>
+<div class="center-block-main">
+	<a href="#"><p class="logo">Название Текста<span class="logo-add">!<span></p></a>
+	<nav>
+		<div class="menu-div">
+			<a href="#" id="menu-icon"></a>
+			<ul class="menu">
+				<li><a href="#" class="active">Блог</a></li>
+				<li><a href="#">Предсказания</a></li>
+				<li><a href="#">Волшебство</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+	</nav>
+	</div>
+</header>
+</body>
+</html>
